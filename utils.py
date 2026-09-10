@@ -22,6 +22,7 @@ if is_notebook():
 else:
     from tqdm import tqdm
 
+
 DTYPE = np.float32
 PICKLE_PATH = 'pickles'; FIGURE_PATH = 'figures'; 
 PATH = PICKLE_PATH; PATH_MODELS = PATH
@@ -50,6 +51,7 @@ PARAMS = {
                     'max_acceleration': 0.08, 'damping': 1.0},
         'c_vel': 1, 'use_test_input': False, 'snap_back' : False,
         }
+
 
 # ======== MODELS, TRAINING & DATASETS ========
 def count_params(m): 
